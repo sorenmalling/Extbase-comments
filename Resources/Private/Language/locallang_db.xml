@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'comments'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_comments_domain_model_comment">Comment</label>
+			<label index="tx_comments_domain_model_comment.subject">Subject</label>
+			<label index="tx_comments_domain_model_comment.message">Message</label>
+			<label index="tx_comments_domain_model_comment.target_object_type">Target Object Type</label>
+			<label index="tx_comments_domain_model_comment.target_object_identifier">Target Object Identifier</label>
+
+		</languageKey>
+	</data>
+</T3locallang>

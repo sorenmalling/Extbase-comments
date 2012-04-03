@@ -1,0 +1,26 @@
+<div class="typo3-comments">
+	<f:render partial="Comments/CommentList" arguments="{comments: comments}" />
+	<form action="{f:widget.uri(action: 'create', ajax: 0, arguments:{object : object})}" method="post">
+		<ol>
+			<li>
+				<label>Name:</label>
+				<input type="text" name="newComment[name]" required="required" />
+			</li>
+			<li>
+				<label>E-Mail:</label>
+				<input type="email" name="newComment[email]" required="required" />
+			</li>
+			<li>
+				<label>Subject:</label>
+				<input type="text" name="newComment[subject]" />
+			</li>
+			<li>
+				<label>Comment:</label>
+				<textarea name="newComment[message]" required="required"></textarea>
+			</li>
+			<li>
+				<input type="submit" value="submit" />
+			</li>
+		</ol>
+	</form>
+</div>

@@ -1,0 +1,13 @@
+<f:if condition="{comments}">
+	<ol>
+		<f:for each="{comments}" as="comment">
+			<li class="typo3-comments-comment">
+				<f:if condition="{comment.subject}">
+					<h3>{comment.subject}</h3>
+				</f:if>
+				<p>{comment.author.name} <time datetime="{comment.creationDate -> f:format.date(format: 'c')}">{comment.creationDate -> f:format.date(format: 'd.m.Y H:i')}</time></p>
+				<p>{comment.message -> f:format.nl2br()}</p>
+			</li>
+		</f:for>
+	</ol>
+</f:if>
